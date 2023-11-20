@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imglogo{
+    width: 100px;
+}
+.bg-img{
+    background-image: url(../images/bg_header.jpg);
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    
+}
+
+.offcanvas{
+    width: 250px !important;
+}
+.page2{
+    background-image: url(../images/bg_nuage.jpg);
+    background-size:cover;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.nuage{
+    width: 400px;
+    height:100% ;
+    
+
+ 
+   
+}
