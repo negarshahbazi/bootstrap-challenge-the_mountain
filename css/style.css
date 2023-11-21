@@ -35,7 +35,7 @@
    
 
 .page3img{
-    width: 300px;
+    width: 500px;
     height: auto;
 }
 .page4{
@@ -45,4 +45,26 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
+}
+.page5 img{
+    width: 100%;
+    height: auto;
+}
+.logosample{
+   width: 100%;
+}
+.page6{
+    background-image: url(../images/bg_newsletter.jpg);
+    
+   
+    background-size:cover;
+    min-width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.page6>div{
+    background-color: rgba(0, 0, 0, 0.642);
+    backdrop-filter:blur(8px);
+    
 }
