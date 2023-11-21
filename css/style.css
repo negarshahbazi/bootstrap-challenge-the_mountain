@@ -23,14 +23,26 @@
     background-image: url(../images/bg_nuage.jpg);
     background-size:cover;
     min-width: 100vw;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100%;
 }
-.nuage{
-    width: 400px;
-    height:100% ;
-    
+  
 
- 
+ .bg-info{
+    background-color: rgb(40, 40, 142)(0, 0, 255, 0.217) !important;
+ }
    
+
+.page3img{
+    width: 300px;
+    height: auto;
+}
+.page4{
+    background-image: url(../images/bg_appareil_photo.jpg);
+    background-size:cover;
+    min-width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
 }
