@@ -1,70 +1,131 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "rokkitt";
 }
 
-.imglogo{
-    width: 100px;
-}
-.bg-img{
-    background-image: url(../images/bg_header.jpg);
-    background-size: cover;
-    min-width: 100vw;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    
+h1 {
+  font-size: 3.5rem;
 }
 
-.offcanvas{
-    width: 250px !important;
+h1 > span {
+  font-family: "rokkitt";
+  font-size: 4.5rem;
+  font-weight: 600;
 }
-.page2{
-    background-image: url(../images/bg_nuage.jpg);
-    background-size:cover;
-    min-width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-}
-  
 
- .bg-info{
-    background-color: rgb(40, 40, 142)(0, 0, 255, 0.217) !important;
- }
-   
+p,
+span,
+a,
+button {
+  font-family: "Roboto";
+}
 
-.page3img{
-    width: 500px;
-    height: auto;
+#home {
+  background-image: url("../images/bg_header.jpg");
+  background-size: cover;
 }
-.page4{
-    background-image: url(../images/bg_appareil_photo.jpg);
-    background-size:cover;
-    min-width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
+
+#about {
+  background-image: url("../images/bg_nuage.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.page5 img{
-    width: 100%;
-    height: auto;
+
+.bg-opacity {
+  background-color: #00aaff55;
 }
-.logosample{
-   width: 100%;
+
+#history {
+  background-image: url("../images/bg_appareil_photo.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.page6{
-    background-image: url(../images/bg_newsletter.jpg);
-    
-   
-    background-size:cover;
-    min-width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
+
+#photos {
+  background-color: #b9b9b9;
 }
-.page6>div{
-    background-color: rgba(0, 0, 0, 0.642);
-    backdrop-filter:blur(8px);
-    
+
+#contact {
+  background-image: url("../images/bg_newsletter.jpg");
+}
+
+#contact > div {
+  background-color: #0006;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+  #home > .content > p,
+  #contact>div>div>div,
+  .bg-opacity,
+  #contact>div>div>div>div>form>input {
+    width: 100% !important;
+  }
+
+  #contact>div>div>div>div>form>button{
+    width: 25% !important;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h1 > span {
+    font-family: "rokkitt";
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  #consecutur,
+  #velo,
+  #logos {
+    flex-direction: column;
+  }
+
+  #logo {
+    justify-content: center;
+  }
+
+  #logo>div>img {
+    width: 50%;
+  }
+
+  footer>div>div{
+    flex-direction: column;
+  }
+
+  #photos-tablette{
+    display: block !important;
+  }
+
+  #navette, #san-francisco-bridge{
+    display: none !important;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+    #contact>div>div>div>div>form>button{
+        width: 50% !important;
+        font-size: 14px;
+      }
+
+    #photos .row{
+      flex-direction: column !important;
+    }
 }

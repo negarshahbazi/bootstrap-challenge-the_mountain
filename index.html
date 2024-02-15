@@ -2,30 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rokkitt:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar fixed-top">
-        <div class="container-md pb-5">
-          <div>
-            <a class="navbar-brand" href="#"
-              ><img
-                class="imglogo"
-                src="./images/your_logo.png"
-                alt=""
-              />Logo</a
-            >
-          </div>
-
+    <header id="home" class="p-5">
+      <nav class="navbar navbar-light bg-transparent fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="./index.html">
+            <img src="./images/your_logo.png" width="200px" alt="" srcset="" />
+            <p class="fs-1 mt-4 fw-light">LOGO</p>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -34,16 +42,29 @@
             aria-controls="offcanvasDarkNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-bars fa-2x"></i>
           </button>
           <div
-            class="offcanvas offcanvas-start text-bg-secondary"
+            class="offcanvas offcanvas-start text-bg-dark"
             tabindex="-1"
             id="offcanvasDarkNavbar"
             aria-labelledby="offcanvasDarkNavbarLabel"
           >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Dark offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-start lh-1 flex-grow-1">
+              <ul
+                class="navbar-nav text-white justify-content-end flex-grow-1 pe-3"
+              >
                 <li class="nav-item">
                   <a
                     class="nav-link active text-white"
@@ -52,420 +73,301 @@
                     >Home</a
                   >
                 </li>
-                <hr />
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Features</a>
+                  <a class="nav-link text-white" href="#">Link</a>
                 </li>
-                <hr />
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">About me</a>
+                  <a class="nav-link text-white" href="#">Link</a>
                 </li>
-                <hr />
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">My blog</a>
+                  <a class="nav-link text-white" href="#">Link</a>
                 </li>
-                <hr />
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">My history</a>
+                  <a class="nav-link text-white" href="#">Link</a>
                 </li>
-                <hr />
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Look my photos</a>
-                </li>
-                <hr />
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Get in touch!</a>
-                </li>
-                <hr />
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Download</a>
-                </li>
-                <hr />
               </ul>
             </div>
           </div>
         </div>
       </nav>
+      <div
+        class="content vh-100 p-5 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1
+          class="d-flex flex-column align-items-center p-5 text-white text-center"
+        >
+          In the hall of the
+          <span>Mountain King</span>
+        </h1>
+
+        <p class="w-50 text-center text-white p-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facere
+          vero deserunt! Vitae, sed velit eius nulla optio ipsum, distinctio
+          error fuga beatae labore pariatur blanditiis, dignissimos doloribus
+          nam dolores!
+        </p>
+        <div class="p-5 d-flex justify-content-center align-items-center">
+          <button class="btn rounded-0 me-1 btn-lg btn-info text-white">
+            Learn more
+          </button>
+          <button class="btn rounded-0 ms-1 btn-lg btn-danger">Download</button>
+        </div>
+      </div>
     </header>
-    <section class="bg-img">
-      <div class="container-md">
-        <div
-          class="d-flex flex-column align-items-center text-white text-center pt-5 px-5"
-        >
-          <p class="fs-2 pt-5">In the hall of</p>
-          <h1 class="text-uppercase">mountain king</h1>
-          <p class="py-2 px-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia non
-            aliquid, consequuntur doloribus consequatur veritatis. Ipsum
-            reprehenderit provident veniam accusantium!
-          </p>
-          <div class="py-5">
-            <button class="btn btn-info" type="button">Learn more</button>
-            <button class="btn btn-danger" type="button">Download</button>
+    <section id="features">
+      <div class="container-lg p-4">
+        <div id="consecutur" class="row">
+          <div class="col d-flex flex-column align-items-center">
+            <i class="fa-solid fa-pencil fa-2x"></i>
+            <h4 class="py-2">Consecetur Risus</h4>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              suscipit magnam voluptas modi distinctio, porro totam repellat
+              deserunt aliquid iusto mollitia soluta? Esse quibusdam atque
+              numquam soluta officiis fugiat recusandae.
+            </p>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <i class="fa-solid fa-camera fa-2x"></i>
+            <h4 class="py-2">Consecetur</h4>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              suscipit magnam voluptas modi distinctio, porro totam repellat
+              deserunt aliquid iusto mollitia soluta? Esse quibusdam atque
+              numquam soluta officiis fugiat recusandae.
+            </p>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <i class="fa-solid fa-bookmark fa-2x"></i>
+            <h4 class="py-2">Consecetur</h4>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              suscipit magnam voluptas modi distinctio, porro totam repellat
+              deserunt aliquid iusto mollitia soluta? Esse quibusdam atque
+              numquam soluta officiis fugiat recusandae.
+            </p>
           </div>
         </div>
       </div>
     </section>
-
-    <div>
-      <div class="container-md px-5 pt-5 mb-5">
-        <div
-          class="row d-flex justify-content-around align-items-center text-center"
-        >
-          <div class="col-md-4">
-            <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                fill="currentColor"
-                class="bi bi-pencil"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"
-                />
-              </svg>
-            </div>
-            <h6>Consectetur Risus</h6>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut fuga
-              eos maxime odio ea. Velit quo dicta veniam nobis architecto!
+    <section id="about">
+      <div class="container-lg">
+        <div class="row px-4 justify-content-end">
+          <div class="w-50 p-5 bg-opacity">
+            <h2 class="text-white">Ligula Mattis Ornare Ultricies</h2>
+            <h4 class="text-white py-4">
+              Ligula Mattis Ornare Ultricies Ligula Mattis Ornare
+            </h4>
+            <p class="text-white lh-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              mollitia velit, quae voluptatem nam commodi! Quis dolore nobis
+              doloremque maxime nam error voluptatem. At voluptas accusamus
+              nostrum quis repudiandae nam.
             </p>
-          </div>
-
-          <div class="col-md-4">
-            <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                fill="currentColor"
-                class="bi bi-camera-fill"
-                viewBox="0 0 16 16"
-              >
-                <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
-                <path
-                  d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"
-                />
-              </svg>
-            </div>
-            <h6>Ultricies Aenean</h6>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut fuga
-              eos maxime odio ea. Velit quo dicta veniam nobis architecto!
-            </p>
-          </div>
-          <div class="col-md-4">
-            <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                fill="currentColor"
-                class="bi bi-bookmarks"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1H4z"
-                />
-                <path
-                  d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1z"
-                />
-              </svg>
-            </div>
-            <h6>Cras Sollicitudin</h6>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut fuga
-              eos maxime odio ea. Velit quo dicta veniam nobis architecto!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="page2 d-flex justify-content-center">
-      <div class="container-md row nuage text-white">
-        <div class="col-md-6"></div>
-        <div class="col-md-6 bg-info bg-opacity-50 p-5 lh-lg">
-          <h1 class="pb-5">Lorem ipsum dolor sit.</h1>
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
-          <p>
-            Unde veniam molestias pariatur reiciendis aut recusandae eius qui
-            Lorem ipsum dolor sit.impedit odio. Deserunt totam doloremque error
-            beatae? Aspernatur ipsam nobis quo accusamus vitae.
-          </p>
-          <div
-            class="row d-flex justify-content-between align-items-center py-auto"
-          >
-            <div
-              class="col-4 d-flex flex-column align-items-center border p-5 text-center lh-lg fs-5"
-            >
-              Ultricies 23,578
-            </div>
-            <div
-              class="col-4 d-flex flex-column align-items-center border p-5 text-center lh-lg fs-5"
-            >
-              Fermentum 12,702
+            <div class="d-flex justify-content-between">
+              <div class="text-white border p-5">
+                <h4>Ultricies</h4>
+                <h4 class="h1">23,578</h4>
+              </div>
+              <div class="text-white border p-5">
+                <h4>Fermentum</h4>
+                <h4 class="h1">23,578</h4>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="page3 pt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-              ea!
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-              eum nam, et hic repellat reiciendis corporis laboriosam nihil
-              explicabo est dicta ullam Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Animi, sapiente nihil ab atque iusto magnam enim
-              obcaecati maiores odit minima Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Obcaecati in veniam deleniti sequi
-              explicabo est recusandae adipisci soluta. Voluptate placeat
-              deleniti voluptatem laboriosam voluptatibus, ad iusto sit amet
-              quaerat distinctio.vel porro rerum. Inventore dicta autem vero
-              accusamus voluptas.blanditiis tempore error nostrum enim sunt,
-              odio iusto ex mollitia illo asperiores tenetur voluptate sequi?
-              Similique sunt in at iure quasi, ab beatae excepturi rem voluptate
-              tenetur facilis magni, perferendis provident, odio natus quaerat
-              illum molestias reprehenderit sapiente.
+    <section id="">
+      <div class="container-lg py-5">
+        <div id="velo" class="row px-4 align-items-center">
+          <div class="col p-5">
+            <h1 class="">Ligula Mattis Ornare Ultricies</h1>
+            <h4 class="py-4">
+              Ligula Mattis Ornare Ultricies Ligula Mattis Ornare
+            </h4>
+            <p class="lh-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              mollitia velit, quae voluptatem nam commodi! Quis dolore nobis
+              doloremque maxime nam error voluptatem. At voluptas accusamus
+              nostrum quis repudiandae nam.
             </p>
-            <button class="btn btn-danger text-white mb-5 rounded-0">
-              take a look
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-right-circle"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
-                />
-              </svg>
+            <p class="lh-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              mollitia velit, quae voluptatem nam commodi! Quis dolore nobis
+              doloremque maxime nam error voluptatem. At voluptas accusamus
+              nostrum quis repudiandae nam.
+            </p>
+            <button class="btn btn-lg btn-danger rounded-0">
+              Take a Look
+              <i class="fa-solid fa-circle-arrow-right"></i>
             </button>
           </div>
-          <div class="col-md-5 d-flex justify-content-center">
-            <img class="page3img p-5" src="./images/1200.jpeg" alt="" />
+          <div class="col">
+            <img src="./images/1200.jpeg" class="w-100" alt="" srcset="" />
           </div>
         </div>
       </div>
     </section>
-    <section class="page4">
-      <div class="row">
-        <div
-          class="col-md-6 container text-white bg-info bg-opacity-50 p-5 mx-5"
-        >
-          <i class="fs-5"
-            >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
-            recusandae officiis laudantium asperiores cum delectus impedit quos
-            eum, sint accusamus!</i
-          >
-          <p class="pt-3 fw-light">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
-            quos voluptatibus perferendis? Aut repellendus iste qui quam
-            suscipit et delectus. Quae nihil nesciunt quis minus quod commodi
-            odio sunt expedita magni suscipit, quam deleniti eaque asperiores
-            sapiente quas eligendi, optio sequi minima incidunt sit fugiat? Cum
-            consectetur soluta dolor impedit!
-          </p>
-          <p class="fw-lighter fs-2">-Lorem, ipsum dolor</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-            omnis?
-          </p>
-        </div>
-        <div class="col-md-6"></div>
-      </div>
-    </section>
-    <section class="page5 bg-secondary-subtle p-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class=""><img src="./images/300.jpeg" alt="" /></div>
-            <div class="row mt-4">
-              <div class="col-md-6">
-                <img src="./images/800.jpeg" alt="" />
-              </div>
-              <div class="col-6">
-                <div class=""><img src="./images/400.jpeg" alt="" /></div>
-                <div class="my-4"><img src="./images/2476.jpeg" alt="" /></div>
-              </div>
-            </div>
-            <div class=""><img src="./images/140.jpeg" alt="" /></div>
-          </div>
-          <div class="col-md-4">
-            <div class=""><img src="./images/776.jpeg" alt="" /></div>
-            <div class="mt-4">
-              <img id="d6" src="./images/439.jpeg" alt="" />
-            </div>
+    <section id="history">
+      <div class="container-lg">
+        <div class="row px-4">
+          <div class="w-50 p-5 bg-opacity">
+            <figure class="text-white">
+              <blockquote cite="https://www.huxley.net/bnw/four.html">
+                <p>
+                  Words can be like X-rays, if you use them properly—they’ll go
+                  through anything. You read and you’re pierced.
+                </p>
+                <p>
+                  Words can be like X-rays, if you use them properly—they’ll go
+                  through anything. You read and you’re pierced.
+                </p>
+                <p>
+                  Words can be like X-rays, if you use them properly—they’ll go
+                  through anything. You read and you’re pierced.
+                </p>
+                <p>
+                  Words can be like X-rays, if you use them properly—they’ll go
+                  through anything. You read and you’re pierced.
+                </p>
+                <p>
+                  Words can be like X-rays, if you use them properly—they’ll go
+                  through anything. You read and you’re pierced.
+                </p>
+                <p>
+                  Words can be like X-rays, if you use them properly—they’ll go
+                  through anything. You read and you’re pierced.
+                </p>
+                <p>
+                  Words can be like X-rays, if you use them properly—they’ll go
+                  through anything. You read and you’re pierced.
+                </p>
+              </blockquote>
+              <figcaption>
+                —Aldous Huxley, <cite>Brave New World</cite>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div class="container mt-5">
-        <div
-          class="row d-flex justify-content-around align-items-center flex-row"
-        >
-          <div class="col-2">
-            <img class="logosample" src="./images/logo-sample-01.jpg" alt="" />
-          </div>
-          <div class="col-2">
-            <img class="logosample" src="./images/logo-sample-02.jpg" alt="" />
-          </div>
-          <div class="col-2">
-            <img class="logosample" src="./images/logo-sample-03.png" alt="" />
-          </div>
-          <div class="col-2">
-            <img class="logosample" src="./images/logo-sample-04.jpg" alt="" />
-          </div>
-          <div class="col-2">
-            <img class="logosample" src="./images/logo-sample-05.jpg" alt="" />
-          </div>
-          <div class="col-2">
-            <img class="logosample" src="./images/logo-sample-06.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="page6 text-white">
-      <div class="row">
-        <div class="col-8 p-5">
-          <h2 class="mb-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Accusantium atque hic ratione, dolor nulla laborum.
-          </h2>
 
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Consequatur perspiciatis eaque dicta ad ipsum inventore ipsa qui,
-            fugiat accusamus cupiditate? Quibusdam voluptate recusandae tempore
-            numquam iste? Reiciendis distinctio assumenda aut, voluptatem
-            mollitia dicta, vel autem officia iure perspiciatis beatae soluta
-            nulla non tempora, esse culpa aliquid odit maiores iusto!
-            Voluptatibus!
-          </p>
-          <form action="">
-            <input type="text" placeholder="YOUR EMAIL HERE..." />
-          </form>
-          <button class="btn btn-danger text-white my-4">
-            Submit Newsstellor
-          </button>
+    <section id="photos" class="p-5">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-8 col-12 col-md-4">
+            <img src="./images/300.jpeg" class="py-2 w-100" alt="" />
+            <div class="row">
+              <div id="san-francisco-bridge" class="col p-2">
+                <img src="./images/800.jpeg" class="w-100" alt="" />
+              </div>
+              <div class="col">
+                <img src="./images/400.jpeg" class="py-2 w-100" alt="" />
+                <img src="./images/2476.jpeg" class="py-2 w-100" alt="" />
+              </div>
+              <img src="./images/140.jpeg" class="py-2 w-100" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 col-12">
+            <img src="./images/776.jpeg" class="py-2 w-100" alt="" />
+            <div id="navette">
+              <img src="./images/439.jpeg" class="py-2 w-100" alt="" />
+            </div>
+          </div>
+          <div id="photos-tablette" class="d-none col-md-4 col-12">
+            <img src="./images/800.jpeg" class="py-2 w-100" alt="" />
+            <img src="./images/439.jpeg" class="py-2 w-100" alt="" />
+          </div>
         </div>
-        <div class="col-4"></div>
       </div>
     </section>
-    <footer>
-      <div class="footer text-bg-secondary">
-        <div class="row p-5 d-flex justify-content-between flex-row">
-          <div class="col-lg-6">
-            <h4 class="text-capitalize">your logo</h4>
-            <p class="pt-5">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-c-circle"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"
+
+    <section>
+      <div class="container">
+        <div id="logos" class="row p-4">
+          <div class="col">
+            <img src="./images/logo-sample-01.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col">
+            <img src="./images/logo-sample-02.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col">
+            <img src="./images/logo-sample-03.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col">
+            <img src="./images/logo-sample-04.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col">
+            <img src="./images/logo-sample-05.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col">
+            <img src="./images/logo-sample-06.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div>
+        <div class="container-lg">
+          <div class="w-50 d-flex px-4">
+            <div class="p-5">
+              <h2 class="text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </h2>
+              <p class="text-white py-5">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Praesentium ad atque assumenda sunt ipsum ratione consectetur
+                error. Repudiandae tenetur ut, officiis, est dolor alias ullam
+                natus numquam aliquid unde illum! Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Praesentium ad atque assumenda
+                sunt ipsum ratione consectetur error. Repudiandae tenetur ut,
+                officiis, est dolor alias ullam natus numquam aliquid unde
+                illum!
+              </p>
+              <form action="" class="d-flex flex-column">
+                <input
+                  class="p-2 w-75"
+                  type="text"
+                  placeholder="Your Email Here"
                 />
-              </svg>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
-              neque<a class="text-decoration-none text-info" href="">
-                Lorem, ipsum dolor.</a
-              >
+                <button class="w-50 rounded-0 mt-3 btn btn-lg btn-danger">
+                  Sumbit Newsletter
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row px-4">
+          <div class="col p-5">
+            <h2 class="text-white fs-1">Your Logo</h2>
+            <p class="text-white py-5">
+              Lorem ipsum dolor sit amet cons
+              <span class="text-info">The maitre Jet d'Ail</span>
             </p>
           </div>
-          <div class="col-lg-3 p-5">
-            <svg
-              class="ml-5 text-info"
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-facebook"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-              />
-            </svg>
-            <svg
-              class="ml-5 text-info"
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-twitter"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-              />
-            </svg>
-            <svg
-              class="ml-5"
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-telegram"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
-              />
-            </svg>
-            <svg
-              class="ml-5"
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-robot"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z"
-              />
-              <path
-                d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z"
-              />
-            </svg>
-            <svg
-              class="ml-5"
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              fill="currentColor"
-              class="bi bi-globe"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
-              />
-            </svg>
+          <div class="col d-flex justify-content-end align-items-center">
+            <i class="fa-brands p-2 fa-2x text-info fa-square-twitter"></i>
+            <i class="fa-brands p-2 fa-2x text-info fa-square-facebook"></i>
+            <i class="fa-brands p-2 fa-2x text-white fa-square-twitter"></i>
+            <i class="fa-brands p-2 fa-2x text-white fa-square-github"></i>
+            <i class="fa-brands p-2 fa-2x text-white fa-square-reddit"></i>
           </div>
         </div>
       </div>
     </footer>
 
+    <a href="#home" class="scroll-to-top">
+      <i class="fa-solid fa-2x text-secondary fa-circle-up"></i>
+    </a>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
   </body>
