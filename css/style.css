@@ -129,3 +129,20 @@ button {
       flex-direction: column !important;
     }
 }
+@media (max-width:600px){
+  .az{
+    width: 30px;
+    font-size: 20px;
+  }
+  .divaz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+
+  }
+  .adad h4{
+    font-size: 12px;
+  }
+}
